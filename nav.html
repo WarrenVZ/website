@@ -1,0 +1,56 @@
+<!-- NAV STARTS -->
+<!-- NAV STARTS -->
+<nav class="sticky" style="box-shadow: 0 0 3rem -0rem #00000068;">
+  <img src="/website/images/logo_nav.svg" alt="" class="logo">
+  <input type="checkbox" id="sidebar-active">
+  <label for="sidebar-active" class="open-sidebar-button">
+      <img src="/website/images/hamburger-closed.svg" alt="" style="height: 40px;">
+  </label>
+<label id="overlay" for="sidebar-active"></label>
+  <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+          <img src="/website/images/hamburger-open.svg" alt=""  style="height: 40px;">
+      </label>
+      <a href="/website/index.html" style="margin-left: auto;">HOME</a>
+      <a href="/website/about.html">ABOUT</a>
+      <a href="/website/shop.html">SHOP</a>
+      <a href="/website/blog.html">BLOG</a>
+      <a href="/website/contact.html">CONTACT</a>
+  </div>
+</nav>
+<!-- NAV ENDS -->
+
+<script src="/script.js"></script>
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll(".nav-link");
+      const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  
+      navLinks.forEach(link => {
+        let href = link.getAttribute("href");
+        if (isLocal) {
+          href = '/website/' + href.replace('/website/', '');
+        }
+        link.href = href;
+      });
+    });
+  </script> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll(".nav-link");
+      const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  
+      navLinks.forEach(link => {
+        let href = link.getAttribute("href");
+        if (isLocal) {
+          // Adjust for local environment
+          href = href.replace('/website/', '');
+        }
+        link.href = href;
+      });
+    });
+  </script>
+
+<!-- NAV ENDS -->
