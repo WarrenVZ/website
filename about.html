@@ -13,8 +13,42 @@
 </head>
 
 <body>
-    <div id="nav-container" style="position: fixed; top: 0; width: 100%;">
-    </div>
+    
+    
+
+
+    <!-- NAV MENU STARTS -->
+<div id="nav-container" class="sticky"></div> <!-- IMPORT THE NAV DIV -->
+<script>
+    function loadNav() {
+        const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        const navPath = isLocal ? '/nav.html' : '/website/nav.html';
+
+        fetch(navPath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-container').innerHTML = data;
+                initializeMenuToggle();
+            })
+            .catch(error => console.error('Error fetching nav:', error));
+    }
+
+    function initializeMenuToggle() {
+        const menuContainer = document.querySelector('.menu-container');
+        const navList = document.querySelector('.nav-list');
+
+        if (menuContainer && navList) {
+            menuContainer.addEventListener('click', () => {
+                menuContainer.classList.toggle('active');
+                navList.classList.toggle('active');
+                document.querySelector('.logo').style.display = navList.classList.contains('active') ? 'none' : 'block';
+            });
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadNav);
+</script>
+<!-- NAV MENU ENDS -->
 
 
 
@@ -30,8 +64,8 @@
             <div style="background-color: #ffffff24;">
                 <img src="images/mugshot2.jpg" alt="" style="width: 200px; margin: 1rem;">
 
-                <h1 class="text2" style="margin: 1rem; color: #ffffff;">ABOUT ME</h1>
-                <p class="text1" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #ffffff;">
+                <h1 class="text2" style="margin: 1rem; color: #000000;">ABOUT ME</h1>
+                <p class="text1" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #000000;">
                     This is the about page of <b>Warren Van Zuydam</b>. If you want a professional profile of me, or
                     want a
                     professional website to view my real-world skills, then I have my LinkedIn profile, as well as my
