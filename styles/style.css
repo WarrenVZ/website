@@ -232,7 +232,13 @@ nav .home-link {
 
 
 
-
+  .footer_section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
 
 
 
@@ -303,6 +309,7 @@ nav .home-link {
     .text2 {
         font-size: 1rem;
     }
+    
 }
 
 @media (max-width: 1024px) {

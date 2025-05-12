@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warren Van Zuydam Website - Home</title>
     <link rel="stylesheet" href="styles/style.css">
-    <meta name="description" content="This is the official website ofz Dee23Gaming">
-    <meta name="keywords" content="Warren Van Zuydam, Dee23Gaming">
+    <meta name="description" content="This is the official website of Warren Van Zuydam">
+    <meta name="keywords" content="Warren Van Zuydam">
     <meta name="author" content="Warren Van Zuydam">
     <link rel="icon" type="image/x-icon" href="images/mugshot.png">
 </head>
@@ -55,7 +55,7 @@
 
 
     <main>
-        <div style="padding-top: 120px; background-color: #43497e; background-image: url('images/pexels-abby-gonz-1476231315-31966478.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
+        <div style="background-color: #43497e; background-image: url('images/pexels-abby-gonz-1476231315-31966478.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
             class="article-section">
             <!-- This is the main webpage div that has padding-top of 50px to prevent elements from hiding behind nav menu -->
 
@@ -64,20 +64,20 @@
             </div> -->
 
             <div id="hero"
-                style="display: grid; grid-template-columns: 1fr 1fr; background-color: #ff00f200; height: 50rem;">
+                style="display: grid; grid-template-columns: 1fr 1fr; background-color: #ff00f200; height: 60rem;">
                 <div style="display: flex; flex-direction: column; align-self: center;">
                     <h1 class="text3" style="margin: 1rem; color: #ffffff;">WELCOME TO THE PERSONAL WEBSITE OF WARREN
                         VAN ZUYDAM
                     </h1>
                     <div>
-                        <button class="btn1">Hire Me</button>
-                        <button class="btn1"
+                        <button class="btn1" style="width: 12rem;" onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });">Hire Me</button>
+                        <button class="btn1" style="width: 12rem;"
                             onclick="document.getElementById('mySkills').scrollIntoView({ behavior: 'smooth' });">View
                             My Skills</button>
                     </div>
 
                 </div>
-                <img id="mugshot" src="images/mugshot.png" alt=""
+                <img id="mugshot" src="images/path1.svg" alt=""
                     style="width: 300px; margin: 1rem; justify-self: center; align-self: center;">
             </div>
 
@@ -86,7 +86,7 @@
 
         <!-- Welcome Section Starts -->
         <div class="article-section" style="background-color: #1e1e1e; padding-top: 1rem;">
-            <h1 class="text3" style="margin: 1rem; color: #ffffff;">HI;
+            <h1 class="text2" style="margin: 1rem; color: #ffffff;">HI;
             </h1>
             <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #c3c3c3;">
                 I'm <b style="color: #ffffff;">Warren Van Zuydam</b>. This is
@@ -139,7 +139,7 @@
 
         <!-- My Education Starts -->
         <div id="mySkills" class="article-section" style="background-color: #ffffff;">
-            <h1 class="text2" style="padding: 1rem; color: #000000;">MY EDUCATION (FORMAL):</h1>
+            <h1 class="text2" style="padding: 1rem; color: #000000;">MY EDUCATION:</h1>
             <img src="images/Structural-Steel-Drawings-800-500.jpg" alt="" style="width: 300px; margin: auto;">
             <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #3f3f3f; margin-top: 1rem;">
                 <b style="color: #000000;">I'm a qualified structural draughtsman</b>. I have experience in
@@ -177,6 +177,10 @@
             <p class="text2" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #ffffff;">
                 - Making PDFs, PDF forms, and interactive PDFs.<br>
                 - Spreadsheets.<br>
+                - Web development and design.<br>
+                - General JavaScript coding.<br>
+                - General Python coding.<br>
+                - Creating desktop apps using Electron.<br>
                 - Ebook creation.<br>
                 - Making basic responsive websites.<br>
                 - Basic knowledge on coding, specifically in Python and JavaScript.<br>
@@ -200,6 +204,40 @@
 
     </main>
     
+<!-- FOOTER STARTS -->
+<footer id="footer" class="footer_section">
+    <p
+        style="font-size: 2rem; max-width: 50rem; text-align: center; color:#c3c3c3; padding-top: 1rem; margin: auto">
+        Get In Touch
+    </p>
+    <p style="max-width: 50rem; text-align: left; color:#c3c3c3; padding: 1rem; margin: auto">
+        Use this form to send a message to me via email. If you are looking to hire me full-time, or as a freelancer, then send me a message, and I should respond within a few minutes. If you're an experienced web dev or designer who just wants to give suggestions, or if you're someone who just wants to request information regarding my digital shop, then feel free to send a message too.
+    </p>
+    <!--FORM STARTS-->
+    <div
+        style="display: flex; flex-direction: column; align-items: center; width: 100%; height: auto; margin: auto">
+        <form style="display: flex; flex-direction: column; align-items: center"
+            action="https://formspree.io/f/xnnqalvd" method="POST">
+            <label style="color: #c3c3c3" for="fname">First Name*</label>
+            <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <br>
+            <label style="color: #c3c3c3" for="lname">Last Name*</label>
+            <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
+                required>
+            <br>
+            <label style="color: #c3c3c3" for="email">Email*</label>
+            <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
+            <br>
+            <label style="color: #c3c3c3" for="subject">Your Message*</label>
+            <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
+                style="height:20rem" required></textarea>
+            <input style="width: 80%; margin: 1rem;" type="submit" value="Submit" class="btn1">
+        </form>
+    </div>
+    <!--FORM ENDS-->
+    <br><br><br>
+    <iframe src="copyright.html" style="width:100%; height: 3rem; border:none;" scrolling="no"></iframe>
+
 </body>
 
 </html>
