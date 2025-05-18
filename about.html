@@ -1,146 +1,168 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warren Van Zuydam Website - About</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="description" content="This is the official website of Warren Van Zuydam">
-    <meta name="keywords" content="Warren Van Zuydam">
+    <title>Website - About</title>
+    <meta name="description" content="This is the official website of Warren Van Zuydam, a.k.a Dee23Gaming">
+    <meta name="keywords" content="Warren Van Zuydam, Dee23Gaming, gaming, blog, projects, Minecraft, YouTube">
     <meta name="author" content="Warren Van Zuydam">
-    <link rel="icon" type="image/x-icon" href="images/mugshot.png">
+    <link rel="icon" type="image/x-icon" href="images/logo_nav.svg">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
-    
-    
+    <!-- MAIN WEBPAGE BOX STARTS -->
+    <div style="max-width: 100vw; background-color: #ffffff; margin: auto;">
+        <!-- CHANGE MAX WIDTH OF THIS DIV TO 100REM FOR THAT BLOCKED LOOK, AND 100VW TO FILL THE EMPTY SPACES LEFT AND RIGHT -->
 
 
-    <!-- NAV MENU STARTS -->
-<div id="nav-container" class="sticky"></div> <!-- IMPORT THE NAV DIV -->
-<script>
-    function loadNav() {
-        const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-        const navPath = isLocal ? '/nav.html' : '/website/nav.html';
-
-        fetch(navPath)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-container').innerHTML = data;
-                initializeMenuToggle();
-            })
-            .catch(error => console.error('Error fetching nav:', error));
-    }
-
-    function initializeMenuToggle() {
-        const menuContainer = document.querySelector('.menu-container');
-        const navList = document.querySelector('.nav-list');
-
-        if (menuContainer && navList) {
-            menuContainer.addEventListener('click', () => {
-                menuContainer.classList.toggle('active');
-                navList.classList.toggle('active');
-                document.querySelector('.logo').style.display = navList.classList.contains('active') ? 'none' : 'block';
-            });
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", loadNav);
-</script>
-<!-- NAV MENU ENDS -->
-
-
-
-
-    <main>
-        <div style="padding-top: 50px;" class="article-section">
-            <!-- This is the main webpage div that has padding-top of 50px to prevent elements from hiding behind nav menu -->
-
-
-            
-
-            <!-- Welcome Section Starts -->
-            <div style="background-color: #ffffff24;">
-                <img src="images/mugshot2.jpg" alt="" style="width: 200px; margin: 1rem;">
-
-                <h1 class="text2" style="margin: 1rem; color: #000000;">ABOUT ME</h1>
-                <p class="text1" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #000000;">
-                    This is the about page of <b>Warren Van Zuydam</b>. If you want a professional profile of me, or
-                    want a
-                    professional website to view my real-world skills, then I have my LinkedIn profile, as well as my
-                    business website, so don't take this website seriously if you've searched my name on the internet as
-                    an
-                    employer or web dev client (unless you want a classic website like this, lol). This is MY wacky,
-                    personal website, so I can do whatever the heck I want here, and I don't have to use responsive,
-                    modern
-                    web dev and design standards. I spare that boring crap for my job. So make no mistake, I can do
-                    modern
-                    web dev, I just don't want my personal website to look as soulless as literally every other boring
-                    website out there today.
-                    <br><br>
-                    I am a casual gamer, YouTuber, and computer hobbyist. My internet name is Dee23Gaming, and I make
-                    YouTube videos on a free and open source alternative of Minecraft, called Luanti (formerly known as
-                    Minetest). I do play Minecraft, but it seems to be saturated on YouTube, so I might abandon
-                    Minecraft
-                    altogether as a game on my channel.
-                    <br><br>
-                    I play other games, such as Garry's Mod, BeamNG Drive, Terraria, GTA V, Counter Strike 1.6 & Source,
-                    Half-Life games (for nostalgia sake), and... yeah. My games list isn't long at all, and as I've
-                    gotten
-                    older, my interest in games as a whole has declined, except for a couple sandbox-style games.
-                    <br><br>
-                    I have recently gotten into messing with website coding, and I am enjoying myself so far. This
-                    website
-                    is not my main project, but my business website has been developed for a while now. Hopefully, I can
-                    build something for myself using that website. Unfortunately, because it's a business website, I
-                    have no
-                    choice but to abide by standard modern website design rules. This website on the other hand... Like
-                    I
-                    said, I can do whatever the heck I want with it, so I decided to go for a late '90s, pixel-based
-                    website
-                    layout. I specifically went for the panel design, as it doesn't require any webpage scrolling. I
-                    made it
-                    so that everything fits within a rectangle.
-                    <br><br>
-                    I am a huge fan of using free and open source software. I like using programs like Inkscape,
-                    LibreOffice
-                    Suite and Krita, just to name a few. We are sucked into this sick system of paying monthly
-                    subscriptions
-                    for products that we do not actually own. Buying a licence for a product is not the same as buying a
-                    physical copy of that piece of software. If my programs do not come in the form of an offline
-                    installer,
-                    then I do not own the software, and therefore, I'm totally at the mercy of that company. If you own
-                    a
-                    business, especially if you are new and trying to get your foot in the door, you do not want
-                    corporations to have control over your future. If they want to shut a software down, raise prices,
-                    or
-                    put essential free functions behind paywalls, you, and your business are then in immediate danger.
-                    This
-                    only applies to people like me, who aren't massive business owners with money to chuck around. But
-                    things are getting harder for the average person. While there have been countless advances in
-                    technology
-                    over the decades to improve efficiency, comfort, security, etc., actually obtaining these needs have
-                    become more and more expensive, or just out of reach. So that's enough of that... I get very
-                    passionate
-                    about this subject. I can talk for ages about the problems of the modern world. Another thing that
-                    bothers me is social media. We're sucked into all kinds of algorithms, on the same small group of
-                    websites. We should fight to keep the indie web alive for as long as we can.
-                </p>
-            </div>
-            <!-- Welcome Section Ends -->
-
-
-
-
-
-
-
-
-
+        <!-- NAV STARTS -->
+        <div id="nav">
         </div>
-    </main>
-    <script src="scripts/nav-loader.js"></script>
+        <!-- NAV ENDS -->
+
+        <main>
+
+
+
+            <section
+                style="background-color: #ffffff; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: center;">
+                <div style="margin: 2rem;">
+                    <p class="text1" style="color: #272727; text-align: center; margin-bottom: 1rem;">ABOUT ME & MY
+                        SERVICES</p>
+                    <p class="text2" style="color: #272727; text-align: center; margin-bottom: 1rem;">Follow Me On
+                    </p>
+                    <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                        <a href=""><img src="images/icons8-facebook.svg" alt=""
+                                style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                        <a href=""><img src="images/icons8-linkedin.svg" alt=""
+                                style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                        <a href=""><img src="images/icons8-tiktok.svg" alt=""
+                                style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                    </div>
+                    <p class="text2" style="color: #272727; text-align: center; margin-bottom: 1rem;">Or
+                    </p>
+                    <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                        <a href="contact.html" class="button3">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section style="background-color: #272727;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+                <div class="grid-box1">
+                    <div class="grid-child1" style="justify-content: center;">
+                        <p class="text1" style="color: #ffffff; margin: 2rem; font-size: 4rem;">Hi;</p>
+                        <p class="text2" style="color: #ffffff; margin: 2rem;">My name is Warren Van Zuydam. I am a
+                            self-taught web developer, graphic designer, and a freelance
+                            transcriptionist with over 3 years experience. I created this personal website of mine as a
+                            "portfolio" of sorts, to show off a whole bunch of skills, compiled into one central space,
+                            for
+                            either anyone looking to
+                            employ me, or any potential clients or customers. All the graphics, the
+                            website's looks, functions, the services I offer, the products I sell... All of this is done
+                            by me.
+                            So if you need a transcription done, a website like mine built from scratch in plain HTML,
+                            CSS and
+                            JavaScript, a digital template, a vector logo... I am here to help out. Above, you'll find
+                            links to
+                            my socials, so you know exactly who I am. On this personal website of mine, I like to use
+                            the word
+                            "we", but it's
+                            really just "me" running everything from the ground up :-)</p>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+                        <img src="images/mugshot2.jpg" alt="" id="mugshot" style="display: grid;">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section
+                style="background-color: #ffffff; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: flex-start;">
+                <div>
+                    <p class="text1" style="color: #272727; text-align: left; margin: 2rem;">Services That I'll Be Offering:</p>
+                </div>
+            </section>
+
+
+
+            <section style="background-color: #ffffff;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+
+                <div class="grid-box1" style="border-style: solid; border-width: 0px; border-color: #724040;">
+                    <div class="grid-child1">
+                        <p class="text1"
+                            style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                            &#10004; Transcription</p>
+                        <p style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">Making
+                            audio/video
+                            accessible to people with hearing difficulties is always appreciated. Transcription is the
+                            task of typing subtitles to whatever is heard in the audio/video. While there were massive
+                            developments with AI and speech-to-text recognition software, clients are always needing
+                            human ears
+                            to understand context, terminology, speaker voices, provide timestamps, maintain
+                            consistency,
+                            etc. Here, at PhonbireWorks, we
+                            offer that service.
+                        </p>
+                        <a href="contact.html" class="button2" style="margin: 2rem;">Learn More</a>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+                        <img src="images/transcription_1.jpg" alt="" style="width: 20rem; max-width: 100%; margin: 2rem;">
+                    </div>
+                </div>
+
+                <div style="background-color: #ff00cc; height: 2rem;">
+                    <!-- THIS IS A SPACER DIV!!! -->
+                </div>
+
+
+                <!-- <div class="grid-box1" style="border-style: solid; border-width: 4px; border-color: #724040;">
+                    <div class="grid-child1">
+                        <p class="text1"
+                            style="color: #724040; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                            &#10004; Website Design & Development</p>
+                        <p style="color: #724040; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">Making
+                            audio/video
+                            accessible to people with hearing difficulties is always appreciated. Transcription is the
+                            task of typing subtitles to whatever is heard in the audio/video. While there were massive
+                            developments with AI and speech-to-text recognition software, clients are always needing
+                            human ears
+                            to understand context, terminology, speaker voices, provide timestamps, maintain
+                            consistency,
+                            etc. Here, at PhonbireWorks, we
+                            offer that service.
+                        </p>
+                        <a href="contact.html" class="button2" style="margin: 2rem;">Learn More</a>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+                        <img src="images/debug.png" alt="" style="width: 20rem; max-width: 100%; margin: 2rem;">
+                    </div>
+                </div> -->
+
+
+
+            </section>
+
+
+
+
+            <!-- MAIN WEBPAGE BOX ENDS -->
+        </main>
+        <footer>
+            <div id="footer">
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="scripts/reusable-html-loader.js"></script>
 </body>
 
 </html>

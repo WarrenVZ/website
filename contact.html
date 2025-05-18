@@ -1,93 +1,91 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warren Van Zuydam Website - Contact</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="description" content="This is the official website of Warren Van Zuydam">
-    <meta name="keywords" content="Warren Van Zuydam">
+    <title>Website - Contact</title>
+    <meta name="description" content="This is the official website of Warren Van Zuydam, a.k.a Dee23Gaming">
+    <meta name="keywords" content="Warren Van Zuydam, Dee23Gaming, gaming, blog, projects, Minecraft, YouTube">
     <meta name="author" content="Warren Van Zuydam">
-    <link rel="icon" type="image/x-icon" href="images/mugshot.png">
+    <link rel="icon" type="image/x-icon" href="images/logo_nav.svg">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
-    
-    
+    <!-- MAIN WEBPAGE BOX STARTS -->
+    <div style="max-width: 100vw; background-color: #ffffff; margin: auto;">
+        <!-- CHANGE MAX WIDTH OF THIS DIV TO 100REM FOR THAT BLOCKED LOOK, AND 100VW TO FILL THE EMPTY SPACES LEFT AND RIGHT -->
 
-    <!-- NAV MENU STARTS -->
-<div id="nav-container" class="sticky"></div> <!-- IMPORT THE NAV DIV -->
-<script>
-    function loadNav() {
-        const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-        const navPath = isLocal ? '/nav.html' : '/website/nav.html';
 
-        fetch(navPath)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-container').innerHTML = data;
-                initializeMenuToggle();
-            })
-            .catch(error => console.error('Error fetching nav:', error));
-    }
+        <!-- NAV STARTS -->
+        <div id="nav">
+        </div>
+        <!-- NAV ENDS -->
 
-    function initializeMenuToggle() {
-        const menuContainer = document.querySelector('.menu-container');
-        const navList = document.querySelector('.nav-list');
 
-        if (menuContainer && navList) {
-            menuContainer.addEventListener('click', () => {
-                menuContainer.classList.toggle('active');
-                navList.classList.toggle('active');
-                document.querySelector('.logo').style.display = navList.classList.contains('active') ? 'none' : 'block';
-            });
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", loadNav);
-</script>
-<!-- NAV MENU ENDS -->
+        <main>
 
 
 
 
-    <main>
-        <div style="padding-top: 120px;" class="article-section">
-            <!-- This is the main webpage div that has padding-top of 50px to prevent elements from hiding behind nav menu -->
 
 
-            
 
-            <!-- Welcome Section Starts -->
-            <div style="background-color: #0000006f;">
-                <h1 class="text2" style="margin: 1rem; color: #ffffff;">CONTACT ME</h1>
-                <p class="text1" style="margin-left: 1rem; margin-right: 1rem; color: #ffffff;">
-                    If you want to send me an email for business, or just chat, then you can send me an email at:
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section style="background-color: #ffffff;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+
+        <div class="grid-box1">
+
+            <div class="grid-child1" style="justify-content: center;">
+                <p class="text1" style="color: #272727;margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                    Contact Me</p>
+                <p style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">
+                    Use the form below for inquiries on transcription, web dev and design, and graphic design for social media advertising. I should respond within a few minutes. We'll discuss pricing, and I'll send a contract once we're both ready to do business.
                 </p>
-                <img src="images/rect1.png" alt="" style="width: 200px; margin: 1rem;">
-                <p class="text1" style="margin-left: 1rem; margin-right: 1rem; color: #ffffff;">
-                    This email address is displayed as an image, instead of plain text to avoid bots from crawling my
-                    website, and adding me to spam lists.
-                    This is my freelance business email (yes, I probably need my own domain, but I'm broke). If you want
-                    to
-                    visit my business website, then <a href="https://phonbireworks.github.io/website/"
-                        target="_blank">here</a> it is.
-                </p>
+                <a href="contact.html" class="button2" style="margin: 2rem;">Get In Touch</a>
             </div>
-            <!-- Welcome Section Ends -->
-
-
-
-
-
-
-
+            <div class="grid-child1" style="justify-content: center; align-items: center;">
+                <img src="images/bitmap.svg" alt="" style="width: 10rem; max-width: 100%; margin: 2rem;">
+            </div>
 
 
         </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- MAIN WEBPAGE BOX ENDS -->
     </main>
-    <script src="scripts/nav-loader.js"></script>
+    <footer>
+        <!-- <iframe src="footer.html" style="width:100%; height: 36rem; border:none;" scrolling="no"></iframe> -->
+        <div id="footer">
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="scripts/reusable-html-loader.js"></script>
 </body>
 
 </html>

@@ -1,243 +1,190 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warren Van Zuydam Website - Home</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="description" content="This is the official website of Warren Van Zuydam">
-    <meta name="keywords" content="Warren Van Zuydam">
+    <title>Website - Home</title>
+    <meta name="description" content="This is the official website of Warren Van Zuydam, a.k.a Dee23Gaming">
+    <meta name="keywords" content="Warren Van Zuydam, Dee23Gaming, gaming, blog, projects, Minecraft, YouTube">
     <meta name="author" content="Warren Van Zuydam">
-    <link rel="icon" type="image/x-icon" href="images/mugshot.png">
+    <link rel="icon" type="image/x-icon" href="images/logo_nav.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/carousel.css">
 </head>
 
 <body>
+    <!-- MAIN WEBPAGE BOX STARTS -->
+    <div style="max-width: 100vw; background-color: #ffffff; margin: auto;">
+        <!-- CHANGE MAX WIDTH OF THIS DIV TO 100REM FOR THAT BLOCKED LOOK, AND 100VW TO FILL THE EMPTY SPACES LEFT AND RIGHT -->
 
 
-    
+        <!-- NAV STARTS -->
+        <div id="nav">
+        </div>
+        <!-- NAV ENDS -->
 
 
-<!-- NAV MENU STARTS -->
-<div id="nav-container" class="sticky"></div> <!-- IMPORT THE NAV DIV -->
-<script>
-    function loadNav() {
-        const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-        const navPath = isLocal ? '/nav.html' : '/website/nav.html';
-
-        fetch(navPath)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-container').innerHTML = data;
-                initializeMenuToggle();
-            })
-            .catch(error => console.error('Error fetching nav:', error));
-    }
-
-    function initializeMenuToggle() {
-        const menuContainer = document.querySelector('.menu-container');
-        const navList = document.querySelector('.nav-list');
-
-        if (menuContainer && navList) {
-            menuContainer.addEventListener('click', () => {
-                menuContainer.classList.toggle('active');
-                navList.classList.toggle('active');
-                document.querySelector('.logo').style.display = navList.classList.contains('active') ? 'none' : 'block';
-            });
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", loadNav);
-</script>
-<!-- NAV MENU ENDS -->
+        <main>
 
 
 
 
-    <main>
-        <div style="background-color: #43497e; background-image: url('images/pexels-abby-gonz-1476231315-31966478.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
-            class="article-section">
-            <!-- This is the main webpage div that has padding-top of 50px to prevent elements from hiding behind nav menu -->
+            <div class="grid-box1" style="background-color: #272727; background-image: url(images/pexels-ivaoo-691710\ -\ Copy.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
 
 
-            <!-- <div id="banner">
-            </div> -->
-
-            <div id="hero"
-                style="display: grid; grid-template-columns: 1fr 1fr; background-color: #ff00f200; height: 60rem;">
-                <div style="display: flex; flex-direction: column; align-self: center;">
-                    <h1 class="text3" style="margin: 1rem; color: #ffffff;">WELCOME TO THE PERSONAL WEBSITE OF WARREN
-                        VAN ZUYDAM
-                    </h1>
-                    <div>
-                        <button class="btn1" style="width: 12rem;" onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });">Hire Me</button>
-                        <button class="btn1" style="width: 12rem;"
-                            onclick="document.getElementById('mySkills').scrollIntoView({ behavior: 'smooth' });">View
-                            My Skills</button>
+                <div class="grid-child1" style="justify-content: center; align-items: center;">
+                    <img id="image1" class="slide-in-left" src="images/mugshot3.jpg" alt="Warren Van Zuydam" style="width: 15rem; max-width: 100%; margin: 2rem; border-color: #ffffff; border-width: 1rem; border-style: solid;">
+                </div>
+                <div id="hero" class="grid-child1 slide-in-left" style="justify-content: center; align-items: center; height: 50rem;">
+                    <div style="border-left-style: solid; border-width: 2px; border-color: #ffffff; padding: 1rem; display: grid; margin: 2rem">
+                        <p class="text1" style="color: #ffffff;">Personal Website Of Warren Van Zuydam</p>
+                        <p class="text2" style="color: #ffffff;">Graphic Designer, Transcriptionist
+                        </p>
+                        <a href="" class="button3" style="width: 8rem; text-align: center;">View My Skills</a>
+                        <a href="" class="button3" style="width: 8rem; text-align: center;">Services</a>
                     </div>
 
+
                 </div>
-                <img id="mugshot" src="images/path1.svg" alt=""
-                    style="width: 300px; margin: 1rem; justify-self: center; align-self: center;">
+
+
+
             </div>
 
 
-        </div>
 
-        <!-- Welcome Section Starts -->
-        <div class="article-section" style="background-color: #1e1e1e; padding-top: 1rem;">
-            <h1 class="text2" style="margin: 1rem; color: #ffffff;">HI;
-            </h1>
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #c3c3c3;">
-                I'm <b style="color: #ffffff;">Warren Van Zuydam</b>. This is
-                my
-                personal space, where I can
-                host
-                my portfolio, display my skills, sell my digital products, offer freelance services, and more. If
-                you are looking
-                to interview/hire me,
-                then
-                get in touch with me on my contact page. <br>
-                This website was built from the ground up in plain HTML,
-                CSS, and JavaScript. So if you want a website of your own, then feel free to send me an email. I am
-                self-taught in web dev and design, but I still have a LOT to learn. I don't know stuff like
-                WordPress, React, Node.js, Vue, etc. - just the basics to create a responsive website. <br>
-                I am somebody
-                who likes to dabble into many random things involving computers, from making websites, learning
-                programming languages, installing different operating systems, doing graphic design, making fonts
-                from scratch, and much, <i>much</i> more. Unfortunately, because I frequently jump interests, I cannot
-                specialise in one of them. I feel that casting a wider net is more beneficial in today's economy,
-                especially now with the threat of AI, but having many random skills is a double-edged sword. I have no
-                idea which
-                lifestyle path is more beneficial for me, but I really like to learn new things about computers. One
-                day, I'm a
-                Python coder, and the next day, I'm creating an interactive PDF ebook in LibreOffice Draw... or I'm
-                coding a website.
-            </p>
-            <h1 class="text2" style="margin: 1rem; color: #ffffff;">WHAT I AIM TO GET OUT OF THIS PERSONAL WEBSITE
-            </h1>
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #c3c3c3;">
-                I hope someone will take notice of my list of random skills and interests, and perhaps find a way to
-                make use of me in their business. I hope to get hired either as a freelancer, or better, a full-time
-                employee. I don't really care what I do, but I need something to get my life going. For a long time,
-                I struggled to settle on one interest to become a master at it, in order to be able to turn it into
-                a
-                living. I am always thinking "What if I did this instead? This looks cool and interesting". As you can
-                tell by now, I have a severe case of "Shiny Object Syndrome".
-            </p>
-            <h1 class="text2" style="margin: 1rem; color: #ffffff;">WHAT TYPE OF WORK WILL I DO?
-            </h1>
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #c3c3c3;">
-                I will take almost anything at this point, from cleaning hotel rooms, doing spreadsheets, stocking
-                shelves, etc. Web design is only a hobby of mine, and I know that many computer-centered fields are
-                under threat by Artificial Intelligence, and other powerful automated tools.
-            </p>
-        </div>
-        <!-- Welcome Section Ends -->
+            <section style="background-color: #ffffff; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: center;">
+                <div style="margin: 2rem;">
+                    <p class="text1" style="color: #272727; text-align: center; margin-bottom: 1rem;">About Me</p>
+                    <!-- <p class="text2" style="color: #272727; text-align: center; margin-bottom: 1rem;">Follow Me On
+                    </p> -->
+                    <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                        <a href=""><img src="images/icons8-facebook.svg" alt="" style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                        <a href=""><img src="images/icons8-linkedin.svg" alt="" style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                        <a href=""><img src="images/icons8-tiktok.svg" alt="" style="width: 4rem; max-width: 100%; margin: 1rem;"></a>
+                    </div>
+                    <!-- <p class="text2" style="color: #272727; text-align: center; margin-bottom: 1rem;">Or
+                    </p> -->
+                    <!-- <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                        <a href="contact.html" class="button3">Get In Touch</a>
+                    </div> -->
+                </div>
+            </section>
 
 
+            <section style="background-color: #ffffff;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+                <div class="grid-box1">
+                    <div class="grid-child1" style="justify-content: center;">
+                        <p class="text1 slide-in-left" style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                            My Story</p>
+                        <p style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">
+                            My name is <b>Warren Van Zuydam</b>. I
+                            created this personal website mainly to show off my random skills, all
+                            aggregated into one central space,
+                            for
+                            either anyone looking to
+                            employ me full-time, or any potential freelance clients or customers. I'm a
+                            self-taught web developer, graphic designer, and a freelance general transcriptionist with over
+                            3 years of experience. All the graphics, this
+                            website's looks, functions, the services I offer, the products I sell... All of this is done
+                            by me.
+                            If you need an audio transcription done, or a website like mine built from scratch in plain
+                            HTML,
+                            CSS and
+                            JavaScript, a digital template... I am here to help out. Above, you'll find
+                            links to
+                            my socials, so you know exactly who I am. My main roles are transcription (for freelance work),
+                            and graphic design (for full-time employment, though I am thinking of offering this as a
+                            freelance service too). All my other "skills" are more hobbies than anything, but hey, if
+                            you like my hobbies, then I can make a plan to extend my services. I am very versatile when it
+                            comes to computers. I can solve most problems, I can pick up programs very
+                            quickly, and I can obsess over my current interest. One day I'm teaching myself Python coding, the
+                            next day, I'm sharpening on my vector graphic design skills, and the other day, I'm messing
+                            around with websites.
 
-        <!-- My Education Starts -->
-        <div id="mySkills" class="article-section" style="background-color: #ffffff;">
-            <h1 class="text2" style="padding: 1rem; color: #000000;">MY EDUCATION:</h1>
-            <img src="images/Structural-Steel-Drawings-800-500.jpg" alt="" style="width: 300px; margin: auto;">
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #3f3f3f; margin-top: 1rem;">
-                <b style="color: #000000;">I'm a qualified structural draughtsman</b>. I have experience in
-                AutoCAD, Tekla, Revit, and
-                Microstation. Unfortunately, I don't have access to this software, so this field has been difficult
-                to get into, because of the expensive, proprietary software, and fierce competition. Finding
-                practice projects, and getting feedback from other experienced draughtsmen is very hard, especially
-                for someone as heavily introverted as me.
-            </p>
-            <br><br>
-            <img src="images/pexels-shkrabaanthony-6266984.jpg" alt="" style="width: 300px; margin: auto;">
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #3f3f3f; margin-top: 1rem;">
-                <b style="color: #000000;">I'm a qualified TEFL teacher</b> (English teacher). I completed
-                my 120-hour TEFL theoretical
-                course, as well as my 20-hour practical course.
-            </p>
-            <br><br>
-            <img src="images/transcription_1.jpg" alt="" style="width: 300px; margin: auto;">
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; color: #3f3f3f; margin-top: 1rem; margin-bottom: 1rem;">
-                <b style="color: #000000;">I'm a general transcriptionist</b>. I receive audio/video from a client,
-                then I type what is being said in the audio/video. This requires patience, the ability to tell
-                different voices apart, proofread, and have a
-                strict understanding of transcription style guides/standards. This is luckily one of those fields
-                where AI
-                still sucks, and probably always will suck. If you need audio/video transcribed, then get in touch
-                with me.
-            </p>
-        </div>
-        <!-- My Education Ends -->
+                        </p>
+                        <a href="contact.html" class="button3 heartbeat" style="margin: 2rem;">Get In Touch</a>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+
+                    </div>
+                </div>
+            </section>
 
 
-        <!-- Featured Blogs Start -->
-        <div class="article-section" style="background-color: #5e81ff;">
-            <h1 class="text2" style="padding: 1rem; color: #ffffff;">My LIST OF INTERESTS AND SELF-TAUGHT SKILLS:</h1>
-            <p class="text2" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; color: #ffffff;">
-                - Making PDFs, PDF forms, and interactive PDFs.<br>
-                - Spreadsheets.<br>
-                - Web development and design.<br>
-                - General JavaScript coding.<br>
-                - General Python coding.<br>
-                - Creating desktop apps using Electron.<br>
-                - Ebook creation.<br>
-                - Making basic responsive websites.<br>
-                - Basic knowledge on coding, specifically in Python and JavaScript.<br>
-                - Vector graphic design and image manipulation for random, real-world situations.<br>
-                - General transcription.<br>
-                - Structural steel detailing and GAs.<br>
-                - Teaching English to foreign students online.<br>
-                - Operating system management for Linux and Windows.<br>
-                - Video editing.<br>
-                - Basic 3D modeling.<br>
-                - YouTube.<br>
 
-            </p>
-        </div>
-        <!-- Featured Blogs End -->
+
+
+            <section style="background-color: #ffffff;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+                <div class="grid-box1">
+                    <div class="grid-child1" style="justify-content: center;">
+                        <p class="text1 slide-in-left" style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                            What I Aim To Get Out Of This Website</p>
+                        <p style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">
+                            I hope someone will take notice of my list of random skills and interests, and perhaps 
+                            find a way to make use of me in their business. I hope to get hired either as a freelancer, 
+                            or better, a full-time employee. I don't really care what I do, but I need something to get 
+                            my life going. For a long time, I struggled to settle on one interest to become a master at 
+                            it, in order to be able to turn it into a living. I am always thinking "What if I did this 
+                            instead? This looks cool and interesting". As you can tell by now, I have a severe case of 
+                            "Shiny Object Syndrome".
+                        </p>
+                        <a href="contact.html" class="button3 heartbeat" style="margin: 2rem;">Get In Touch</a>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section style="background-color: #ffffff;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
+                <div class="grid-box1">
+                    <div class="grid-child1" style="justify-content: center;">
+                        <p class="text1 slide-in-left" style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">
+                            My Skills And Hobbies</p>
+                        <p style="color: #272727; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">
+                            I hope someone will take notice of my list of random skills and interests, and perhaps <br>
+                            find a way to make use of me in their business. I hope to get hired either as a freelancer, 
+                            or better, a full-time employee. I don't really care what I do, but I need something to get 
+                            my life going. For a long time, I struggled to settle on one interest to become a master at 
+                            it, in order to be able to turn it into a living. I am always thinking "What if I did this 
+                            instead? This looks cool and interesting". As you can tell by now, I have a severe case of 
+                            "Shiny Object Syndrome".
+                        </p>
+                        <a href="contact.html" class="button3 heartbeat" style="margin: 2rem;">Get In Touch</a>
+                    </div>
+                    <div class="grid-child1" style="justify-content: center; align-items: center;">
+                        
+                    </div>
+                </div>
+            </section>
 
 
 
 
 
 
-    </main>
-    
-<!-- FOOTER STARTS -->
-<footer id="footer" class="footer_section">
-    <p
-        style="font-size: 2rem; max-width: 50rem; text-align: center; color:#c3c3c3; padding-top: 1rem; margin: auto">
-        Get In Touch
-    </p>
-    <p style="max-width: 50rem; text-align: left; color:#c3c3c3; padding: 1rem; margin: auto">
-        Use this form to send a message to me via email. If you are looking to hire me full-time, or as a freelancer, then send me a message, and I should respond within a few minutes. If you're an experienced web dev or designer who just wants to give suggestions, or if you're someone who just wants to request information regarding my digital shop, then feel free to send a message too.
-    </p>
-    <!--FORM STARTS-->
-    <div
-        style="display: flex; flex-direction: column; align-items: center; width: 100%; height: auto; margin: auto">
-        <form style="display: flex; flex-direction: column; align-items: center"
-            action="https://formspree.io/f/xnnqalvd" method="POST">
-            <label style="color: #c3c3c3" for="fname">First Name*</label>
-            <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.." required>
-            <br>
-            <label style="color: #c3c3c3" for="lname">Last Name*</label>
-            <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
-                required>
-            <br>
-            <label style="color: #c3c3c3" for="email">Email*</label>
-            <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
-            <br>
-            <label style="color: #c3c3c3" for="subject">Your Message*</label>
-            <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
-                style="height:20rem" required></textarea>
-            <input style="width: 80%; margin: 1rem;" type="submit" value="Submit" class="btn1">
-        </form>
+
+
+            <!-- MAIN WEBPAGE BOX ENDS -->
+        </main>
+        <footer>
+            <!-- <iframe src="footer.html" style="width:100%; height: 36rem; border:none;" scrolling="no"></iframe> -->
+            <div id="footer">
+            </div>
+        </footer>
     </div>
-    <!--FORM ENDS-->
-    <br><br><br>
-    <iframe src="copyright.html" style="width:100%; height: 3rem; border:none;" scrolling="no"></iframe>
-
+    </div>
+    <script src="scripts/reusable-html-loader.js"></script>
+    <script src="scripts/carousel_auto_scroll_1.js"></script>
+    <script src="scripts/animate_on_view.js"></script>
 </body>
 
 </html>
