@@ -14,6 +14,6 @@ async function loadContent(elementId, filePath) {
 }
 
 window.addEventListener("load", () => {
-  loadContent("nav", "../nav.html");
-  loadContent("footer", "../footer.html");
+  loadContent("nav", "/nav.html");
+  loadContent("footer", "/footer.html");
 });
