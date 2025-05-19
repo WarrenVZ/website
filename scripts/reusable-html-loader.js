@@ -9,7 +9,8 @@ async function loadHTML(url, targetSelector) {
       // If your navigation has interactive elements like the hamburger button,
       // you might need to call the function to enable them here,
       // especially if it wasn't already called after loading nav.html previously.
-      if (url === '/nav.html') {
+
+      if (url === '/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
         addHamburgerFunctionality();
       }
     } else {
@@ -33,7 +34,8 @@ function addHamburgerFunctionality() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('/website/nav.html', 'header');
+  // loadHTML('/website/nav.html', 'header');
+  loadHTML('/nav2.html', 'header');
   loadHTML('/website/footer.html', 'footer');
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
