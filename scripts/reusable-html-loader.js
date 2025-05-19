@@ -33,7 +33,7 @@ function addHamburgerFunctionality() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('/nav.html', 'header');
-  loadHTML('/footer.html', 'footer');
+  loadHTML('/website/nav.html', 'header');
+  loadHTML('/website/footer.html', 'footer');
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
