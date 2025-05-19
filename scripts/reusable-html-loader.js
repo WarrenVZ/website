@@ -34,7 +34,15 @@ function addHamburgerFunctionality() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // loadHTML('/website/nav.html', 'header');
+
+  // If you're using GitHub Pages, include your repo
+  // name, such as /website/nav.html. Doing this will
+  // make your offline webpage not be able to fetch
+  // the HTML, which is fine. You can edit out your
+  // repo name while you're editing offline, but
+  // remember to re-enable it!!!
+
+  // loadHTML('/website/nav.html', 'header'); // Another nav style
   loadHTML('/website/nav2.html', 'header');
   loadHTML('/website/footer.html', 'footer');
   // You can add other loadHTML calls here for your footer, sidebar, etc.
