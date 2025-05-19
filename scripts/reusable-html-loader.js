@@ -1,19 +1,39 @@
-async function loadContent(elementId, filePath) {
+async function loadHTML(url, targetSelector) {
   try {
-      const response = await fetch(filePath);
-      const content = await response.text();
-      document.getElementById(elementId).innerHTML = content;
-      //Load script.js after nav.html is loaded.
-      const script = document.createElement('script');
-      script.src = '/scripts/script.js';
-      document.body.appendChild(script);
+    const response = await fetch(url);
+    const htmlContent = await response.text();
+    const targetElement = document.querySelector(targetSelector);
 
+    if (targetElement) {
+      targetElement.innerHTML = htmlContent;
+      // If your navigation has interactive elements like the hamburger button,
+      // you might need to call the function to enable them here,
+      // especially if it wasn't already called after loading nav.html previously.
+      if (url === '/nav.html') {
+        addHamburgerFunctionality();
+      }
+    } else {
+      console.error(`No element found with the selector: ${targetSelector} to inject content from ${url}.`);
+    }
   } catch (error) {
-      console.error(`Error loading ${filePath} into ${elementId}:`, error);
+    console.error(`Failed to load content from ${url}:`, error);
   }
 }
 
-window.addEventListener("load", () => {
-  loadContent("nav", "/nav.html");
-  loadContent("footer", "/footer.html");
+function addHamburgerFunctionality() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadHTML('/nav.html', 'header');
+  loadHTML('/footer.html', 'footer');
+  // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
