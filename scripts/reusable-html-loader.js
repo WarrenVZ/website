@@ -10,7 +10,7 @@ async function loadHTML(url, targetSelector) {
       // you might need to call the function to enable them here,
       // especially if it wasn't already called after loading nav.html previously.
 
-      if (url === '/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+      if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
         addHamburgerFunctionality();
       }
     } else {
