@@ -10,7 +10,7 @@ async function loadHTML(url, targetSelector) {
       // you might need to call the function to enable them here,
       // especially if it wasn't already called after loading nav.html previously.
 
-      if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+      if (url === '/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
         addHamburgerFunctionality();
       }
     } else {
@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // make your offline webpage not be able to fetch
   // the HTML, which is fine. You can edit out your
   // repo name while you're editing offline, but
-  // remember to re-enable it!!!
+  // remember to re-enable it!!! Also, remember the
+  // if statement above that adds the hamburger
+  // functionality! Add your repo name there too!
 
   // loadHTML('/website/nav.html', 'header'); // Another nav style
-  loadHTML('/website/nav2.html', 'header');
-  loadHTML('/website/footer.html', 'footer');
+  loadHTML('/nav2.html', 'header');
+  loadHTML('/footer.html', 'footer');
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });

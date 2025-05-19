@@ -1,11 +1,11 @@
 <nav class="responsive-nav">
     <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/shop/">Shop</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="/shop.html">SHOP</a></li>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="/contact.html">CONTACT</a></li>
     </ul>
     <button class="hamburger">
         <div class="bar"></div>
@@ -18,12 +18,13 @@
     .responsive-nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
+        /* align-items: center; */
+        padding: 2rem;
         background-color: #ffffff;
         position: fixed;
         width: 100%;
         z-index: 1;
+        box-shadow: 0 8px 16px 0 #00000033;
     }
 
     .nav-links {
@@ -34,14 +35,20 @@
     }
 
     .nav-links li {
-        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .nav-links li a {
         text-decoration: none;
         color: #272727;
         /* Example link color */
-        font-weight: bold;
+        font-weight: normal;
+    }
+
+    .nav-links li a:hover {
+        text-decoration: underline;
+        color: #8255ff;
     }
 
     .hamburger {
@@ -66,17 +73,18 @@
 
     /* Responsive adjustments for smaller screens */
     @media (max-width: 768px) {
+
         .nav-links {
             display: none;
             flex-direction: column;
             width: 100%;
             background-color: #ffffff;
-            position:fixed;
+            position: fixed;
             top: 60px;
+            box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
             /* Adjust based on your header height */
             left: 0;
             align-items: center;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             z-index: 10;
             /* Ensure it's above other content */
         }
