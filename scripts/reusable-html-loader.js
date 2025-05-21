@@ -10,9 +10,15 @@ async function loadHTML(url, targetSelector) {
       // you might need to call the function to enable them here,
       // especially if it wasn't already called after loading nav.html previously.
 
-      if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+
+      // if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+      //   addHamburgerFunctionality();
+      // }
+
+      if (url === '/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
         addHamburgerFunctionality();
       }
+      
     } else {
       console.error(`No element found with the selector: ${targetSelector} to inject content from ${url}.`);
     }
@@ -43,9 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // remember to re-enable it!!! Also, remember the
   // if statement above that adds the hamburger
   // functionality! Add your repo name there too!
+  // Alternatively, you can duplicate the code into
+  // two different versions, and comment out depending
+  // if you're editing offline, or uploading to live.
 
-  // loadHTML('/website/nav.html', 'header'); // Another nav style
-  loadHTML('/website/nav2.html', 'header');
-  loadHTML('/website/footer.html', 'footer');
+  
+  // loadHTML('/website/nav2.html', 'header');
+  // loadHTML('/website/footer.html', 'footer');
+
+  loadHTML('/nav2.html', 'header');
+  loadHTML('/footer.html', 'footer');
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
