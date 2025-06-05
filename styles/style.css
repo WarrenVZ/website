@@ -79,6 +79,30 @@ body {
     font-size: 2rem;
 }
 
+
+.text-gradient1 {
+    /* 1. Apply the linear gradient as a background image */
+    background-image: linear-gradient(to right, #ff6c6c, #8255ff);
+    /* Example: Orange to Peach */
+
+    /* 2. Clip the background to the text area */
+    -webkit-background-clip: text;
+    /* For WebKit browsers (Chrome, Safari, Edge) */
+    background-clip: text;
+
+    /* 3. Make the text color transparent so the background image shows through */
+    -webkit-text-fill-color: transparent;
+    /* For WebKit browsers */
+    color: transparent;
+    /* Standard property */
+
+    /* Optional: Add a subtle text shadow for depth */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 .button1 {
     border-style: solid;
     border-width: 2px;
@@ -128,6 +152,29 @@ body {
     box-shadow: 0 0px 20px #00000066;
 }
 
+.button4 {
+    height: min-content;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: #2231ff;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.button4:hover {
+    /* background-color: #8f67ff; */
+    background-color: #3a47ff;
+    box-shadow: 0 0px 20px #00000066;
+}
+
 
 
 .fab-container {
@@ -174,7 +221,8 @@ body {
 
 @media(max-width: 1000px) {
     #hero {
-        height: 40rem !important; /* "!important" overrides any inline styling on the HTML script */
+        height: 40rem !important;
+        /* "!important" overrides any inline styling on the HTML script */
     }
 }
 
@@ -182,37 +230,47 @@ body {
     .text1 {
         font-size: 2rem !important;
     }
+
     .text2 {
         font-size: 1rem !important;
     }
-    
+
 }
 
 @media(max-width: 768px) {
-    #nav { /* This set the nav iframe to a custom height when switched to mobile mode */
+    #nav {
+        /* This set the nav iframe to a custom height when switched to mobile mode */
         height: 20.5rem;
     }
+
     .nav-logo {
         margin-right: 0;
     }
+
     .nav-menu {
         flex-direction: column;
     }
+
     #mugshot {
         width: 10rem;
     }
+
     .grid-box1 {
         grid-template-columns: 1fr;
     }
+
     .grid-box2 {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     #hero {
         height: 25rem !important;
     }
+
     #image1 {
         width: 10rem !important;
     }
+
     #image2 {
         display: none;
     }
@@ -222,6 +280,7 @@ body {
     .text1 {
         font-size: 2rem !important;
     }
+
     .grid-box2 {
         grid-template-columns: 1fr 1fr;
     }

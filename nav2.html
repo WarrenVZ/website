@@ -1,3 +1,5 @@
+<img id="logo" src="images/New folder/bitmap.png" alt="Warren Van Zuydam" style="width: 10rem; max-width: 100%; position: absolute; top: 1rem; left: 1rem;">
+
 <nav class="responsive-nav">
     <ul class="nav-links">
         <!-- Keep duplicates of the nav links, and comment out the version
@@ -5,19 +7,23 @@
          GitHub Pages, because as you should know, GitHub Pages requires
          your repo name as the root directory! -->
 
-        <li><a href="/website/index.html">HOME</a></li>
+        <!-- <li><a href="/website/index.html">HOME</a></li>
         <li><a href="/website/services.html">SERVICES</a></li>
         <li><a href="/website/shop.html">SHOP</a></li>
         <li><a href="/website">PORTFOLIO</a></li>
+        <li><a href="/website">MY LAB</a></li>
         <li><a href="/website">BLOG</a></li>
-        <li><a href="/website/contact.html">CONTACT</a></li>
+        <li><a href="/website/contact.html">CONTACT</a></li> -->
 
-        <!-- <li><a href="/index.html">HOME</a></li>
-        <li><a href="/services.html">SERVICES</a></li>
-        <li><a href="/shop.html">SHOP</a></li>
-        <li><a href="/">PORTFOLIO</a></li>
-        <li><a href="/">BLOG</a></li>
-        <li><a href="/contact.html">CONTACT</a></li> -->
+
+
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./">Portfolio</a></li>
+        <li><a href="./">My Lab</a></li>
+        <li><a href="./">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
 
     </ul>
     <button class="hamburger">
@@ -30,14 +36,16 @@
 <style>
     .responsive-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         /* align-items: center; */
         padding: 2rem;
-        background-color: #ffffff;
-        position: fixed;
-        width: 100%;
+        margin-bottom: -100px;
+        /* This allows the hero image background to display behind the nav menu */
+        background-color: #000000;
+        /* position: fixed; */
+        /* width: 100%; */
         z-index: 1;
-        box-shadow: 0 8px 16px 0 #00000033;
+        /* box-shadow: 0 8px 16px 0 #00000033; */
     }
 
     .nav-links {
@@ -49,14 +57,14 @@
 
     .nav-links li {
         margin-right: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav-links li a {
         text-decoration: none;
         color: #272727;
         /* Example link color */
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .nav-links li a:hover {
@@ -79,27 +87,42 @@
     .bar {
         width: 100%;
         height: 0.25rem;
-        background-color: #272727;
+        background-color: #ffffff;
         border-radius: 10px;
         transition: all 0.3s ease-in-out;
     }
 
     /* Responsive adjustments for smaller screens */
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+
+        #logo {
+            display: none;
+        }
+
+        .responsive-nav {
+            background-color: #000000;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+        }
 
         .nav-links {
             display: none;
             flex-direction: column;
             width: 100%;
-            background-color: #ffffff;
+            background-color: #000000;
             position: fixed;
             top: 60px;
-            box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
+            /* box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2); */
             /* Adjust based on your header height */
             left: 0;
             align-items: center;
             z-index: 10;
             /* Ensure it's above other content */
+        }
+
+        .nav-links li a {
+            color: #ffffff;
         }
 
         .nav-links.active {

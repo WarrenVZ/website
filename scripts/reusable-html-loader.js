@@ -11,13 +11,13 @@ async function loadHTML(url, targetSelector) {
       // especially if it wasn't already called after loading nav.html previously.
 
 
-      if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
-        addHamburgerFunctionality();
-      }
-
-      // if (url === '/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+      // if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
       //   addHamburgerFunctionality();
       // }
+
+      if (url === './nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+        addHamburgerFunctionality();
+      }
 
     } else {
       console.error(`No element found with the selector: ${targetSelector} to inject content from ${url}.`);
@@ -54,10 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // if you're editing offline, or uploading to live.
 
   
-  loadHTML('/website/nav2.html', 'header');
-  loadHTML('/website/footer.html', 'footer');
+  // loadHTML('/website/nav2.html', 'header');
+  // loadHTML('/website/footer.html', 'footer');
 
-  // loadHTML('/nav2.html', 'header');
-  // loadHTML('/footer.html', 'footer');
+  loadHTML('./nav2.html', 'header');
+  loadHTML('./footer.html', 'footer');
+
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
