@@ -15,7 +15,7 @@ async function loadHTML(url, targetSelector) {
       //   addHamburgerFunctionality();
       // }
 
-      if (url === '../../nav2.html') { // Adds the hamburger functionality to nav2.html!!!
+      if (url === '/website/nav2.html') { // Adds the hamburger functionality to nav2.html!!!
         addHamburgerFunctionality();
       }
 
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // loadHTML('/website/nav2.html', 'header');
   // loadHTML('/website/footer.html', 'footer');
 
-  loadHTML('../../nav2.html', 'header');
-  loadHTML('../../footer.html', 'footer');
+  loadHTML('/website/nav2.html', 'header');
+  loadHTML('/website/footer.html', 'footer');
 
   // You can add other loadHTML calls here for your footer, sidebar, etc.
 });
