@@ -1,4 +1,4 @@
-<img id="logo" src="images/New folder/bitmap.png" alt="Warren Van Zuydam" style="width: 10rem; max-width: 100%; position: absolute; top: 1rem; left: 1rem;">
+<a href="../../index.html"><img id="logo" src="../../images/New folder/bitmap.png" alt="Warren Van Zuydam" style="width: 10rem; max-width: 100%; position: absolute; top: 1rem; left: 1rem;"></a>
 
 <nav class="responsive-nav">
     <ul class="nav-links">
@@ -7,23 +7,23 @@
          GitHub Pages, because as you should know, GitHub Pages requires
          your repo name as the root directory! -->
 
-        <!-- <li><a href="/website/index.html">HOME</a></li>
-        <li><a href="/website/services.html">SERVICES</a></li>
-        <li><a href="/website/shop.html">SHOP</a></li>
-        <li><a href="/website">PORTFOLIO</a></li>
-        <li><a href="/website">MY LAB</a></li>
-        <li><a href="/website">BLOG</a></li>
-        <li><a href="/website/contact.html">CONTACT</a></li> -->
+        <!-- <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../services.html">Services</a></li>
+        <li><a href="../../">Digital Shop</a></li>
+        <li><a href="../../">Portfolio</a></li>
+        <li><a href="../../">Projects</a></li>
+        <li><a href="../../blog.html">Blog</a></li>
+        <li><a href="../../contact.html">Contact</a></li> -->
 
 
 
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./">Services</a></li>
-        <li><a href="./">Shop</a></li>
-        <li><a href="./">Portfolio</a></li>
-        <li><a href="./">My Lab</a></li>
-        <li><a href="./">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="/website/index.html">Home</a></li>
+        <li><a href="/website/services.html">Services</a></li>
+        <li><a href="">Digital Shop</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="/website/blog.html">Blog</a></li>
+        <li><a href="/website/contact.html">Contact</a></li>
 
     </ul>
     <button class="hamburger">
@@ -57,7 +57,7 @@
 
     .nav-links li {
         margin-right: 1.5rem;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .nav-links li a {
@@ -69,7 +69,7 @@
 
     .nav-links li a:hover {
         text-decoration: underline;
-        color: #8255ff;
+        /* color: #8255ff; */
     }
 
     .hamburger {
@@ -90,17 +90,18 @@
         background-color: #ffffff;
         border-radius: 10px;
         transition: all 0.3s ease-in-out;
+        z-index: 100;
     }
 
     /* Responsive adjustments for smaller screens */
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
 
         #logo {
             display: none;
         }
 
         .responsive-nav {
-            background-color: #000000;
+            background-color: #091e47;
             position: fixed;
             width: 100%;
             justify-content: space-between;
@@ -110,7 +111,7 @@
             display: none;
             flex-direction: column;
             width: 100%;
-            background-color: #000000;
+            background-color: #091e47;
             position: fixed;
             top: 60px;
             /* box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2); */
