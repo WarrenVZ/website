@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="arrow.svg"
+   sodipodi:docname="arrow-hover.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="3.9811461"
-     inkscape:cx="64.303091"
+     inkscape:cx="32.905097"
      inkscape:cy="19.466756"
      inkscape:window-width="1920"
      inkscape:window-height="988"
@@ -75,7 +75,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:1;fill:#091e47;fill-opacity:1;stroke:none;stroke-width:1.54614;stroke-dasharray:none"
+       style="opacity:1;fill:#173572;fill-opacity:1;stroke:none;stroke-width:1.54614;stroke-dasharray:none"
        id="rect8"
        width="20"
        height="20"
