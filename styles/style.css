@@ -343,6 +343,31 @@ body {
     box-shadow: 0 0px 40px #00000066;
 }
 
+.button6 {
+    height: min-content;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: #128251;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.button6:hover {
+    background-color: #1ca268;
+    box-shadow: 0 0px 40px #00000066;
+    -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
 
 
 .fab-container {
