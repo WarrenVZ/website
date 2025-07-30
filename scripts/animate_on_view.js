@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const elements = document.querySelectorAll('.fade-in, .slide-in-left');
+    const elements = document.querySelectorAll('');
     elements.forEach(element => observer.observe(element));
 });
 
@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const elements = document.querySelectorAll('.fade-in, .slide-in-left');
+    const elements = document.querySelectorAll('.');
     elements.forEach(element => observer.observe(element));
 });
