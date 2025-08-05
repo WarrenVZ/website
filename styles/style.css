@@ -457,6 +457,10 @@ body {
         gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .video1 {
+        align-self: center;
+        width: 100vw !important;
+    }
 }
 
 @media(max-width: 767px) {
