@@ -209,7 +209,20 @@ body {
 
 
 
+.card1-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+.card1 {
+    transition: transform 0.3s ease;
+}
+
+.card1:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0px 3rem #0000003d;
+    opacity: 80%;
+}
 
 
 
@@ -302,9 +315,9 @@ body {
     border-style: solid;
     border-width: 0px;
     border-radius: 4px;
-    background-color: #091e47;
+    background-color: #ffffff;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem;
@@ -316,7 +329,7 @@ body {
 
 .button4:hover {
     /* background-color: #8f67ff; */
-    background-color: #173572;
+    background-color: #d5d5d5;
     box-shadow: 0 0px 20px #00000066;
 }
 
@@ -412,10 +425,22 @@ body {
 
 /* MEDIA QUERIES START */
 
+@media(max-width: 1320px) {
+    .card1-parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media(max-width: 1000px) {
     #hero {
         height: 50rem !important;
         /* "!important" overrides any inline styling on the HTML script */
+    }
+
+    .card1-parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -434,7 +459,7 @@ body {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     #nav {
         /* This set the nav iframe to a custom height when switched to mobile mode */
         height: 20.5rem;
@@ -464,16 +489,21 @@ body {
         height: 25rem !important;
     }
 
-    #image1 {
+    .image1 {
         width: 20rem !important;
     }
 
-    #image2 {
+    .image2 {
         display: none;
     }
 
     .blog-image {
         width: 20rem !important;
+    }
+
+    .card1-parent {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -491,7 +521,7 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    #image1 {
+    .image1 {
         width: 15rem !important;
     }
 }
