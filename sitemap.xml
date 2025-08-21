@@ -8,19 +8,24 @@
 
 
 <url>
-  <loc>https://warrenvz.github.io/website/index.html</loc>
-  <lastmod>2025-07-29T07:37:33+00:00</lastmod>
+  <loc>https://warrenvz.github.io/website/</loc>
+  <lastmod>2025-08-14T18:49:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://warrenvz.github.io/website/contact.html</loc>
-  <lastmod>2025-07-29T07:37:33+00:00</lastmod>
+  <loc>https://warrenvz.github.io/website/index.html</loc>
+  <lastmod>2025-08-14T18:49:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://warrenvz.github.io/website/services.html</loc>
-  <lastmod>2025-07-29T07:37:33+00:00</lastmod>
+  <lastmod>2025-08-14T18:49:23+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://warrenvz.github.io/website/contact.html</loc>
+  <lastmod>2025-08-14T18:49:23+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
